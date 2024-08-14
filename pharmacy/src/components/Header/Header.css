@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&family=Yatra+One&display=swap');
+
+:root{
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.yatra-one-regular {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    margin: 0;
+    padding: 0; 
+    top: 0;
+}
+
+#root {
+    /* max-width: 1280px; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+.header-container{
+    margin: 0;
+    padding: 0;
+    background-color:  var(--cor-2);
+    width: 90vw;
+    height: 20vh;
+ 
+}
+
+.header-container h1{
+    font-family: "Yatra One", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--cor-4);
+  
+    font-size: 90px;
+}
+
+
+.logo img{
+    width: 10vw;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    /* padding-top: 2%; */
+    height: 20vh;
+    width: 20vw;
+    padding: 0;
+    will-change: filter;
+    transition: filter 300ms;
+
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em  var(--cor-1));
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em  var(--cor-5));
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
