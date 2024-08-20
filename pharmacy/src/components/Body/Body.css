@@ -37,12 +37,74 @@
 
 .textBody{
     width: 33.3vw;
-
+    padding: 2%;
     background-image: "./src/assets/farmarcia-placa.png";
 }
 
-.spanCamisetas{
-    font-weight: 600;
+.textBody p, .textBody h2 {
+    font-family: "Yatra One", system-ui;
+    font-weight: 100;
+    /* font-style: normal; */
+    color: var(--cor-2);
+    /* padding-left: 8%;
+    padding-right: 3%; */
+    padding-bottom: 2em;
+    text-align: justify;
+    font-size: 20px;
+    z-index: 1;
+    
+}
+
+.textBody h2{
+    padding-bottom: 0.4em;
+    text-align: center;
+}
+
+.textAbout{
+    width: 33.3vw;
+    padding: 2%;
+    background-image: "./src/assets/farmarcia-placa.png";
+    background-color: var(--cor-4);
+    top: 0;
+    position: fixed;
+}
+.textAbout p{
+    font-family: "Yatra One", system-ui;
+    font-weight: 100;
+    /* font-style: normal; */
+    color: var(--cor-2);
+    /* padding-left: 8%;
+    padding-right: 3%; */
+    padding-bottom: 0.5em;
+    text-align: justify;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.textAbout h3 {
+    font-family: "Yatra One", system-ui;
+    font-weight: 700;
+    /* font-style: normal; */
+    color: var(--cor-5);
+    /* padding-left: 8%;
+    padding-right: 3%; */
+    padding-bottom: 0.5em;
+    /* text-align: justify; */
+    font-size: 17px;
+    font-variant-caps: all-petite-caps;
+ 
+}
+
+.spanFofoca{
+  
+    font-family: "Yatra One", system-ui;
+    font-weight: 100;
+    /* font-style: normal; */
+    color: var(--cor-2);
+    background-color: var(--cor-4);
+    text-align: justify;
+    font-size: 20px;
+   
 }
 
 .bodyImage{
@@ -54,22 +116,11 @@
     height: 100%;
 }
 
-.textBody p {
-    font-family: "Yatra One", system-ui;
-    font-weight: 100;
-    /* font-style: normal; */
-    color: var(--cor-2);
-    padding-left: 3%;
-    padding-right: 3%;
-    text-align: justify;
-    font-size: 20px;
-    z-index: 1;
-    
-}
-
-.modalCamiseta{
+.boxFofoca{
     z-index: 10;
-    position: fixed
+    position: fixed;
+    background-color: #e6e6e6;
+    width: 33.3vw;
 }
 
 .bodyImageRight{
