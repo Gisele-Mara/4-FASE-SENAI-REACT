@@ -7,7 +7,7 @@ function AboutMarcia() {
         <>
             <div className="textAbout" >
                 <h3>
-                    - Extra: A curiosidade está nas alturas e quer saber mais sobre a Márcia (#fofocaAlert)?
+                  
                 </h3>
                 <p> Nome: Márcia Maria Mirenda </p>
                 <p>  Idade: 32 anos </p>
@@ -81,7 +81,7 @@ function Body() {
                     </p>
                     <br/><br/>
                     <span className={"spanFofoca"} onMouseEnter={() => setShowFofoca(true)}
-                        onMouseLeave={() => setShowFofoca(false)}> Gostaria saber mais sobre a dona? Passe o mouse</span>
+                        onMouseLeave={() => setShowFofoca(false)}> Extra: A curiosidade está nas alturas e quer saber mais sobre a Márcia (#fofocaAlert)? Passe o mouse</span>
 
 
                 </div>

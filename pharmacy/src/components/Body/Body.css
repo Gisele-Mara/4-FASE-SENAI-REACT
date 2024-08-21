@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
 :root{
     --cor-1: #e23e57;
@@ -42,22 +43,25 @@
 }
 
 .textBody p, .textBody h2 {
-    font-family: "Yatra One", system-ui;
-    font-weight: 100;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
     /* font-style: normal; */
     color: var(--cor-2);
     /* padding-left: 8%;
     padding-right: 3%; */
     padding-bottom: 2em;
     text-align: justify;
-    font-size: 20px;
+    font-size: 23px;
     z-index: 1;
+    letter-spacing: 0.13em;
     
 }
 
 .textBody h2{
     padding-bottom: 0.4em;
     text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.16em;
 }
 
 .textAbout{
@@ -67,23 +71,27 @@
     background-color: var(--cor-4);
     top: 0;
     position: fixed;
+    border-radius: 100px;
+    border-style: solid;
+    border-color:var(--cor-5);
 }
 .textAbout p{
-    font-family: "Yatra One", system-ui;
-    font-weight: 100;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 700;
     /* font-style: normal; */
     color: var(--cor-2);
     /* padding-left: 8%;
     padding-right: 3%; */
     padding-bottom: 0.5em;
     text-align: justify;
-    font-size: 17px;
+    font-size: 20px;
     z-index: 1;
+    letter-spacing: 0.13em;
 }
 
 .textAbout h3 {
-    font-family: "Yatra One", system-ui;
-    font-weight: 700;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
     /* font-style: normal; */
     color: var(--cor-5);
     /* padding-left: 8%;
@@ -91,19 +99,20 @@
     padding-bottom: 0.5em;
     /* text-align: justify; */
     font-size: 17px;
-    font-variant-caps: all-petite-caps;
+    font-variant-caps: titling-caps;
  
 }
 
 .spanFofoca{
   
-    font-family: "Yatra One", system-ui;
-    font-weight: 100;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
     /* font-style: normal; */
     color: var(--cor-2);
-    background-color: var(--cor-4);
+    /* background-color: forestgreen; */
     text-align: justify;
-    font-size: 20px;
+    font-size: 30px;
+  
    
 }
 
@@ -121,6 +130,7 @@
     position: fixed;
     background-color: #e6e6e6;
     width: 33.3vw;
+    
 }
 
 .bodyImageRight{
