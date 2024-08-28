@@ -1,0 +1,49 @@
+.product-container{
+
+    
+    cursor: pointer;
+    /* background-color: red; */
+  
+}
+
+.product-card:hover{
+    border-radius: 60px;
+    transition: 3s;
+
+}
+
+.product-card{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(21, 200, 206);
+    box-shadow: 0px 0 10px rgb(35, 77, 216);
+    cursor: pointer;
+    width: 20vw;
+    height: 25dvh;
+    min-width: 10vh;
+    min-height: 10vh;
+}
+
+
+.listCard:first-child {
+    background-color: yellow;
+    font-size: 20px;
+  }
+
+
+  .listCard {
+    list-style-type: none;
+  }
+
+  li:first-child {
+    /* background: yellow; */
+    /* padding-right: 390px; */
+    font-size: 0px;
+    color:#15d656;;
+  } 
+
+  li:nth-child(2){
+
+    font-size: 2em;
+    font-weight: 500;
+  }
