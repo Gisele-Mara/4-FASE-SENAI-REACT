@@ -28,12 +28,16 @@
 .listCard:first-child {
     background-color: yellow;
     font-size: 20px;
+  
   }
 
 
   .listCard {
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
   }
+
 
   li:first-child {
     /* background: yellow; */

@@ -162,7 +162,7 @@ function App() {
   }
 
   const [inputName, setInputName] = useState('');
-  const [inputDescription, setInputDescription] = useState('aa');
+  const [inputDescription, setInputDescription] = useState('');
   const [inputPrice, setInputPrice] = useState('bb');
   const [inputWeight, setInputWeight] = useState('cc');
   const [arrayP, setInputArrayP] = useState(arrayProduct)
@@ -209,23 +209,26 @@ function App() {
         <label htmlFor="">Description </label>
         <input type="text"
          placeholder='Description of the product'
-         value={inputName}
+         maxLength={16}
+         value={inputDescription}
          onChange={(event) => setInputDescription(event.target.value)}
         />
       </div>
       <div className="inputContainer">
         <label htmlFor="">Price </label>
-        <input type="text"
+        <input type="number"
          placeholder='Price'
-         value={inputName}
+         step={0.1}
+         value={inputPrice}
          onChange={(event) => setInputPrice(event.target.value)}
         />
       </div>
       <div className="inputContainer">
         <label htmlFor="">Weight: </label>
-        <input type="text"
+        <input type="number"
          placeholder='Weight'
-         value={inputName}
+         step={0.1}
+         value={inputWeight}
          onChange={(event) => setInputWeight(event.target.value)}
         />
       </div>
