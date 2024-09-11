@@ -153,7 +153,7 @@ function App() {
       weight: "4.0 kg"
     }
   ]
-  
+
   let product = {
     name: "Chair",
     description: "A chair to sit",
@@ -166,12 +166,12 @@ function App() {
   const [inputPrice, setInputPrice] = useState('bb');
   const [inputWeight, setInputWeight] = useState('cc');
   const [arrayP, setInputArrayP] = useState(arrayProduct)
-  
-  function nameChanged(event){
+
+  function nameChanged(event) {
     setInputName(event.target.value)
     // console.log(event)
   }
-  function insertData(){
+  function insertData() {
     let obj = {
       id: Date.now,
       name: inputName,
@@ -180,67 +180,73 @@ function App() {
       weight: inputWeight
     }
     console.log(obj)
-    setInputArrayP([     obj,
+    setInputArrayP([obj,
       ...arrayP
- 
+
     ]);
   }
 
 
- 
- 
+
+
 
   return (
     <>
-      <Title text={"Insert Product"} />
-      {/* <Product appProduct={product}/> */}
-   
-   
-    <div className="formCadastro">
-      <div className="inputContainer">
-        <label htmlFor="">Name: </label>
-        <input type="text"
-         placeholder='Name of the product'
-         value={inputName}
-         onChange={nameChanged}
-        />
-      </div>
-      <div className="inputContainer">
-        <label htmlFor="">Description </label>
-        <input type="text"
-         placeholder='Description of the product'
-         maxLength={16}
-         value={inputDescription}
-         onChange={(event) => setInputDescription(event.target.value)}
-        />
-      </div>
-      <div className="inputContainer">
-        <label htmlFor="">Price </label>
-        <input type="number"
-         placeholder='Price'
-         step={0.1}
-         value={inputPrice}
-         onChange={(event) => setInputPrice(event.target.value)}
-        />
-      </div>
-      <div className="inputContainer">
-        <label htmlFor="">Weight: </label>
-        <input type="number"
-         placeholder='Weight'
-         step={0.1}
-         value={inputWeight}
-         onChange={(event) => setInputWeight(event.target.value)}
-        />
-      </div>
-    </div>
-    <button onClick={insertData}> Insert </button>
+      <div>
+        <Title text={"Register a Product"} />
+        {/* <Product appProduct={product}/> */}
 
-  <div className='product-container-card'>
-      {
-        arrayP.map((item) =>
-        (<Product key={item.id} appArrayProduct={item}/>)  )
-      }
-  </div >
+
+        <div className="formCadastro">
+          <div className="inputContainer">
+            <label htmlFor="">Name: </label>
+            <input type="text"
+              placeholder='Name'
+              value={inputName}
+              onChange={nameChanged}
+            />
+          </div>
+          <div className="inputContainer">
+            <label htmlFor="">Description </label>
+            <input type="text"
+              placeholder='Description'
+              maxLength={16}
+              value={inputDescription}
+              onChange={(event) => setInputDescription(event.target.value)}
+            />
+          </div>
+          <div className="inputContainer">
+            <label htmlFor="">Price </label>
+            <input type="number"
+              placeholder='Price'
+              min={0}
+              step={0.1}
+              value={inputPrice}
+              onChange={(event) => setInputPrice(event.target.value)}
+            />
+          </div>
+          <div className="inputContainer">
+            <label htmlFor="">Weight: </label>
+            <input type="number"
+              placeholder='Weight'
+              min={0}
+              step={0.1}
+              value={inputWeight}
+              onChange={(event) => setInputWeight(event.target.value)}
+            />
+          </div>
+        </div>
+        <button onClick={insertData}> Insert </button>
+       
+       
+       
+          <div className='product-container-card'>
+            {
+              arrayP.map((item) =>
+                (<Product key={item.id} appArrayProduct={item} />))
+            }
+        </div>
+      </div>
     </>
   )
 }
