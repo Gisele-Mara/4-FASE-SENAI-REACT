@@ -6,7 +6,7 @@ function Login() {
 
   const [user, setUser] = useState(false)
   const [age, setAge] = useState(0)
-  
+
   let login = "Login"
   let logout = "Logout"
   return (
@@ -20,8 +20,6 @@ function Login() {
       </div>
 
       <div className='renderContainer'>
-
-        {user && <LoggedUser />}
 
         <button onClick={() => setAge(age - 1)}> - </button>
         {age}
