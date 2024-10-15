@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Body.css"
+import Senhas from "../Senhas/Senhas";
 
 function AboutMarcia() {
 
@@ -45,7 +46,7 @@ function Body() {
     return (
         <>
             <div className="bodyContainer">
-
+                        {/* <Senhas /> */}
                 <div className="bodyImage">
 
                     <img src="/src/assets/farmarcia-placa.png" alt="Placa" />

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&family=Yatra+One&display=swap');
+
+:root{
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    min-width: 100vw;
+    font-family: "Yatra One", system-ui;
+    font-weight: 700;
+    color: var(--cor-4);
+    font-size: 25px;
+
+}

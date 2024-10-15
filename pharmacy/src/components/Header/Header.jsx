@@ -1,3 +1,4 @@
+import Navbar from "../NavBar/Navbar"
 import "./Header.css"
 
 
@@ -18,6 +19,7 @@ function Header() {
     <div className="header-container">
           <Logo />
            <h1> Farmácia</h1>
+           <Navbar />
     </div>
   )
 }

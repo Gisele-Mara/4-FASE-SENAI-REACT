@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&family=Yatra+One&display=swap');
+
+html{
+   background-color:  var(--cor-4);
+ 
+}
+:root{
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 80vh;   
+    background-color:  var(--cor-4);
+}
+
+.btnGerarSenha{
+  
+    width: 25%;
+    height: 90%;
+    gap: 10%;
+    font-family: "Yatra One", system-ui;
+    
+}
+
+
+.filaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-2);
+    font-size: 16px;
+    height: 90vh;
+    width: 50%;
+
+
+}
+
+.filaSenhas {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.filaSenhas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.chamarSenha{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 5vh;
+    color: var(--cor-2);
+    font-weight: bold;
+    font-family: "Yatra One", system-ui;
+    height: 10%;
+}
+
+button {
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
